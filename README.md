@@ -60,9 +60,15 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+## Authentication
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+- Clients will start by authenticating with a username and password.
+- Once authenticated, the server will issue a JWT that can be sent as a bearer token in an authorization header on subsequent requests to prove authentication.
+- We'll also create a protected route that is accessible only to requests that contain a valid JWT.
+
+
+- Allow users to authenticate with username/password, returning a JWT for use in subsequent calls to protected API endpoints. We're well on our way to meeting this requirement. To complete it, we'll need to write the code that issues a JWT.
+- Create API routes which are protected based on the presence of a valid JWT as a bearer token.
 
 ## Stay in touch
 
@@ -70,6 +76,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## License
 
-  Nest is [MIT licensed](LICENSE).
