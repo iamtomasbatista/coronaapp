@@ -1,0 +1,39 @@
+GET http://localhost:3000/users
+
+### Create a new User
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "email": "test2@test.com",
+  "password": "123456",
+  "firstname": "Second",
+  "lastname": "Testing"
+}
+
+### Find an User
+GET http://localhost:3000/users/1
+
+### Update an User
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "lastname": "Updated"
+}
+
+### Delete an User
+DELETE http://localhost:3000/users/2
+
+### Authentication
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "john",
+  "password": "changeme"
+}
+
+### Protected Route
+GET http://localhost:3000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4iLCJzdWIiOjEsImlhdCI6MTU5OTkzNjc4NiwiZXhwIjoxNTk5OTM2ODQ2fQ._QbTUyYoZp3FsTneU0N9YJQlT586amuEzDfbPWKB7D8
