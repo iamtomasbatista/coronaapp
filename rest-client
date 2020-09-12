@@ -30,10 +30,10 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-  "email": "john",
-  "password": "changeme"
+  "email": "test@test.com",
+  "password": "123456"
 }
 
 ### Protected Route
 GET http://localhost:3000/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4iLCJzdWIiOjEsImlhdCI6MTU5OTkzNjc4NiwiZXhwIjoxNTk5OTM2ODQ2fQ._QbTUyYoZp3FsTneU0N9YJQlT586amuEzDfbPWKB7D8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJzdWIiOjEsImlhdCI6MTU5OTkzNzA3MCwiZXhwIjoxNTk5OTM3MTMwfQ.8CYcv70m3Rn22RCy6R1oJISLDkgL4X4O9pSTwsMb_-w
