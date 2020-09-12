@@ -1,4 +1,5 @@
 GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJzdWIiOjEsImlhdCI6MTU5OTkzNzUzOCwiZXhwIjoxNTk5OTM3NTk4fQ.QG_HWLcnjuWoIDFGyXjhVGtXgOUD1PN2j_CzHRzeCJo
 
 ### Create a new User
 POST http://localhost:3000/users
@@ -36,4 +37,4 @@ Content-Type: application/json
 
 ### Protected Route
 GET http://localhost:3000/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJzdWIiOjEsImlhdCI6MTU5OTkzNzA3MCwiZXhwIjoxNTk5OTM3MTMwfQ.8CYcv70m3Rn22RCy6R1oJISLDkgL4X4O9pSTwsMb_-w
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJzdWIiOjEsImlhdCI6MTU5OTkzNzIxNCwiZXhwIjoxNTk5OTM3Mjc0fQ.dQPGwgn7Fq7hZHdIGwILS92jwHpWCpEjYFMTDchfX7g
