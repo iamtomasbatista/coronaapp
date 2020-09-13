@@ -8,7 +8,7 @@
 
 ## Requirements
 
-A local PostgreSQL database with credentials that must match with those in app.module.ts.
+- A local PostgreSQL database with credentials that must match with those in app.module.ts.
 
 ```
 type: 'postgres'
@@ -18,6 +18,9 @@ username: 'coronauser',
 password: 'coronapassword'
 database: 'coronadb'
 ```
+
+- Node.js and npm (Developed with Node.js v12.18.2 and npm 6.14.5).
+
 
 ⚠ Although there is a docker-compose.yml file for starting Docker, this functionality is still in development so don't use it. A local PostgreSQL database is required. 
 
